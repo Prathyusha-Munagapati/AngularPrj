@@ -19,8 +19,6 @@ export class UserComponent implements OnInit {
     this.route.queryParams.subscribe(params=>
       {
         this.data = JSON.parse(params.data);
-        console.log("InUser", this.data)
-        console.log(this.data.values)
       })
 
   }

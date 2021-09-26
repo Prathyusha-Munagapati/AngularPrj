@@ -26,7 +26,6 @@ export class ProfileComponent implements OnInit {
   val:any;
   dataSource = new MatTableDataSource<any>(); 
   public USER_DATA: user[] = [];
-  UserInfo: any;
   constructor(private msg :FakeService,
     private router :Router,
     private route:ActivatedRoute) {}
@@ -46,14 +45,18 @@ export class ProfileComponent implements OnInit {
     }
     viewData(val:any)
     {
-      this.USER_DATA.forEach((value:any, index:any)=>
+      console.log("user")
+      this.dataSource.data.forEach((value:any, index:any)=>
       {
+        console.log("user1")        
         if(value == val)
+        console.log("user", val)
         {
-          this.UserInfo = val
+          console.log("success")
           this.router.navigate(['./user'],
           {
-            queryParams:{data:JSON.stringify(this.val)}
+            queryParams:{data:JSON.stringify(value)}
+           
           }
           )
         }
@@ -61,7 +64,9 @@ export class ProfileComponent implements OnInit {
   
     }
 
-    }
+  }
+
+    
 
 
 

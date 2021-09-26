@@ -20,7 +20,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FakeService } from './fake.service';
 import { UserComponent } from './user/user.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
-import {MatTableModule} from '@angular/material/table'
+import {MatTableModule} from '@angular/material/table';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -47,7 +49,8 @@ import {MatTableModule} from '@angular/material/table'
     MatSidenavModule,
     FormsModule,
     ReactiveFormsModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule
     
 
     
