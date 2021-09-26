@@ -1,0 +1,26 @@
+table {
+    font-family:cursive;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th.mat-header-cell 
+  {
+    text-align: center;
+    font-size:120%;
+    color:navy
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #d9e1faf1;
+  }
+  button
+  {
+      border-radius: 5px;
+      color:crimson
+  }

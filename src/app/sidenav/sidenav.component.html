@@ -1,0 +1,40 @@
+<mat-toolbar class="mat-elevation-z6">
+    <img src="https://xplcom.xploree.in/kptwebsite/wp-content/uploads/2018/12/KPT-Localization-Logo-174x60-2x.png" alt="kpt"><div class = "spacer"></div>
+
+    <a mat-button routerLink='home'> Home</a>
+    <a mat-button routerLink="services">Services</a>
+    <a mat-button routerLink="aboutus">About Us</a>
+    <a mat-raised-button routerLink="signup">Sign Up</a>
+    
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav class="mat-sidenav" mode="side"opened>
+        <button  mat-button routerLink='login' class="menu-button">
+            <mat-icon>home</mat-icon>
+            <span>Login</span>
+        </button>
+        <button  mat-button routerLink='user' class="menu-button">
+            <mat-icon>account_circle</mat-icon>
+            <span>User</span>
+        </button>
+        <button  mat-button routerLink='profile' class="menu-button">
+            <mat-icon>account_circle</mat-icon>
+            <span>Profile</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>settings</mat-icon>
+            <span>Settings</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>toc</mat-icon>
+            <span>Options</span>
+        </button>
+    
+       
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+    <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

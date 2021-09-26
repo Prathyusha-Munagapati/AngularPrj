@@ -1,0 +1,58 @@
+
+<div class="container">
+    <div class="title">KPT Registration Form</div>
+    <div class="content">
+      <form action="kpt.html" id="frm">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" id="fname"placeholder="Enter your name" [(ngModel)]="fname" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" id="uname" placeholder="Enter your username"[(ngModel)] = "uname" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="email" placeholder="Enter your email" [(ngModel)] = "email" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" id="phn" placeholder="Enter your number" [(ngModel)] = "phn" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>              
+            <input type="password" id="pwd" placeholder="Enter your password" [(ngModel)] = "pwd" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" id = "pwd1" placeholder="Confirm your password">
+          </div>
+        </div>
+         
+<div class="gender-details">
+   
+  <label for="gender" style="color:white">Gender:</label>
+  <select id="gender" name="gender">
+    <option value="Female">Female</option>
+    <option value="Male">Male</option>
+    <option value="Others">Others</option>
+ </select>
+</div>
+         
+          <div class="Extra-details">
+   
+  <input type="checkbox" name="aandc" id="123">
+              <label for="Agree" style="color:white">Agree and Continue</label>
+
+</div>
+<div class="button">
+            <span id="butn">
+          <input type="button" (click)="getData()"  value="Register" >
+        </span>
+        </div>
+      </form>
+    </div>
+  </div>
+  <h1 *ngFor = "let user_details of Details" ></h1>
+  
